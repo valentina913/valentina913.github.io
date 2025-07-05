@@ -1,3 +1,5 @@
+(add-to-load-path "../")
+(use-modules (links))
 (post
  :title "My first post!"
  :date (make-date* 2025 06 21 09 00)
@@ -11,6 +13,8 @@
     document format that allows you to use
     embed scheme programs to create your
     document.])
+
+(p [,(%carpentries) website.])
 
 (p [1 + 2 + 3 = ]
    (+ 1 2 3)))
